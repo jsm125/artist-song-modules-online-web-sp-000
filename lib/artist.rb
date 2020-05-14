@@ -10,7 +10,6 @@ class Artist
   attr_reader :songs
 
   @@artists = []
-  @@songs
 
   def initialize
     super
@@ -22,7 +21,7 @@ class Artist
   # end
 
   def self.all
-    @@songs
+    @@artists
   end
 
   def add_song(song)

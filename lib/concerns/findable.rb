@@ -1,4 +1,4 @@
-module find_by_name
+module Findable
   module ClassMethods
     
   def find_by_name(name)

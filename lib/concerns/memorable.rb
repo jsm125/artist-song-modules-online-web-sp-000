@@ -5,17 +5,17 @@ module Memorable
       self.all.clear
     end
   
+    def count
+      self.all.count
+    end
+  
   end
 
   module InstanceMethods
 
-  def count
-    self.all.count
-  end
-
-  def initialize
-    self.class.all << self
-  end
+    def initialize
+      self.class.all << self
+    end
 
   end
 end
